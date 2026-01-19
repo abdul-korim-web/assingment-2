@@ -1,12 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Assingment 2</title>
-     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-</head>
-<body>
-    
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- font added -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="inter-font bg-[#412567]">
+    <nav
+      class="flex justify-between items-center p-[20px] md:px-[150px] md:py-[30px] lg:px-[200px]"
+    >
+      <div class="">
+        <h2 class="text-white text-3xl">
+          Tech<span
+            class="bg-clip-text text-transparent bg-gradient-to-b from-[#F7E93F] via-[#FB09B4] to-[#9100F8/50] md:text-4xl"
+            >wave</span
+          >
+        </h2>
+      </div>
+      <!-- large menu -->
+      <div class="hidden md:inline-block">
+        <ul
+          class="md:flex md:space-x-[25px] lg:space-x-[32px] text[16px] font-medium text-white"
+        >
+          <li><a href="#">About</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#  ">About</a></li>
+        </ul>
+      </div>
+      <!-- button -->
+      <div class="hidden md:inline-block">
+        <button
+          class="px-[16px] py-[12px] rounded-[10000px] bg-gradient-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] text-white"
+        >
+          Subscribe
+        </button>
+      </div>
+      <div class="md:hidden">
+        <img src="images/hamburger-menu.png" alt="hamburger-menu" />
+      </div>
+    </nav>
+    <!-- hero section -->
+    <header
+      class="bg-[url('images/hero-bg.png')] bg-cover bg-center bg-no-repeat min-h-[466px]  bg-[#19113D] relative lg:min-h-[760px] "
+    >
+      <div class=" relative w-[200px] h-[200px] lg:w-[350px] lg:h-[350px] top-[40px] left-1/2 -translate-x-1/2">
+        <img
+        class="w-[200px] h-[200px] lg:w-[350px] lg:h-[350px] "
+        src="images/hero-circle.png"
+        alt=""
+      />
+      <img class="w-[80px] lg:w-[200px]  h-[80px] lg:h-[200px] absolute left-1/2 top-1/2 -translate-[50%] " src="images/microphone.png" alt="" />
+      </div>
+      <!-- header text -->
+      <div class="my-[50px] flex flex-col space-y-[8px] justify-center items-center px-[20px] lg:mt-[60px] ">
+        <h2 class="text-[40px] font-extrabold text-white lg:text-[60px]">TechWave</h2>
+        <p class="text-white opacity-[0.8] text-[16px] text-center ">
+          Your daily dose of tech insights, productivity hacks, and personal
+          growth
+        </p>
+        <div class="flex justify-between items-center mt-[16px] space-x-[8px]">
+          <button class="py-[12px] px-[20px] rounded-[10000px] bg-gradient-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] text-white">Listen on Spotify</button>
+          <button class="bg-transparent border border-[#00FF88] text-[#00FF88] text-[16px] py-[12px] px-[20px] rounded-[10000px] ">Subscribe</button>
+        </div>
+      </div>
+    </header>
+  </body>
 </html>
