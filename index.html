@@ -12,10 +12,17 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body class="inter-font bg-[#1A0B2E]">
     <nav
-      class="flex justify-between items-center p-[20px] md:px-[150px] md:py-[30px] lg:px-[200px] border-b-2 border-b-[#746964]"
+      class="flex justify-between items-center p-[20px] md:px-[150px] md:py-[30px] lg:px-[200px] border-b-2 border-b-[#412567]"
     >
       <div class="">
         <h2 class="text-white text-3xl">
@@ -30,17 +37,29 @@
         <ul
           class="md:flex md:space-x-[25px] lg:space-x-[32px] text[16px] font-medium text-white"
         >
-          <li><a href="#">About</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#  ">About</a></li>
+          <li
+            class="hover:text-blue-300 hover:transition-all hover:duration-300 hover:text-[20px]"
+          >
+            <a href="#">About</a>
+          </li>
+          <li
+            class="hover:text-blue-300 hover:transition-all hover:duration-300 hover:text-[20px]"
+          >
+            <a href="#">About</a>
+          </li>
+          <li
+            class="hover:text-blue-300 hover:transition-all hover:duration-300 hover:text-[20px]"
+          >
+            <a href="#  ">About</a>
+          </li>
         </ul>
       </div>
       <!-- button -->
       <div class="hidden md:inline-block">
         <button
-          class="px-[16px] py-[12px] rounded-[10000px] bg-gradient-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] text-white"
+          class="px-[16px] py-[12px] rounded-[10000px] bg-gradient-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] text-white transition-all duration-300 hover:scale-105 ease-in-out cursor-pointer hover:bg-gradient-to-r hover:from-[#9100F8] hover:via-[#FB09B4] hover:to-[#F7E93F]"
         >
-          Subscribe
+          Subscribe <i class="fa-solid fa-arrow-right ml-1"></i>
         </button>
       </div>
       <div class="md:hidden">
@@ -64,6 +83,7 @@
           src="images/microphone.png"
           alt=""
         />
+       <div class="text-black text-[18px] font-semibold bg-[#00FF88] rounded-[1000px] w-[75px] h-[38px] flex justify-center items-center absolute top-[0px] right-0 lg:right-[40px]">NEW</div>
       </div>
       <!-- header text -->
       <div
@@ -76,16 +96,17 @@
           Your daily dose of tech insights, productivity hacks, and personal
           growth
         </p>
-        <div class="flex justify-between items-center mt-[16px] space-x-[8px]">
+        <div class="flex justify-between items-center mt-[16px] space-x-[10px]">
           <button
-            class="py-[12px] px-[20px] rounded-[10000px] bg-gradient-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] text-white"
-          >
-            Listen on Spotify
+            class="px-[20px] py-[12px] rounded-[10000px] bg-gradient-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] text-white transition-all duration-300 hover:scale-105 ease-in-out cursor-pointer hover:bg-gradient-to-r hover:from-[#9100F8] hover:via-[#FB09B4] hover:to-[#F7E93F] flex justify-center items-center space-x-[8px]"
+          > <img src="images/spotify.png" alt="">
+           <h2> Listen on Spotify</h2>
           </button>
           <button
-            class="bg-transparent border border-[#00FF88] text-[#00FF88] text-[16px] py-[12px] px-[20px] rounded-[10000px]"
+            class="bg-transparent border border-[#00FF88] text-[#00FF88] text-[16px] py-[12px] px-[20px] rounded-[10000px] transition-all duration-300 hover:scale-105 ease-in-out cursor-pointer  flex justify-center items-center space-x-[8px]"
           >
-            Subscribe
+          <img src="images/message.png" alt="">
+           <h2> Subscribe</h2>
           </button>
         </div>
       </div>
@@ -157,7 +178,8 @@
         class="grid grid-cols-1 mt-[16px] lg:mt-[40px] space-y-[16px] lg:grid-cols-12 lg:gap-[40px]"
       >
         <div
-          class="bg-[#351165]/40 p-[24px] flex flex-col space-y-[16px] rounded-[24px] lg:col-span-3 lg:row-span-8 lg:justify-center lg:px-[40px]"
+          class="bg-[#351165]/40 p-[24px] flex flex-col space-y-[16px] rounded-[24px] lg:col-span-3 lg:row-span-8 lg:justify-center lg:px-[40px] shadow-2xl transition-all duration-300 hover:scale-110 cursor-pointer
+          "
         >
           <img class="w-[60px] h-[60px]" src="images/headphone.png" alt="" />
           <h2 class="text-white text-[22px] lg:text-[24px] font-bold">
@@ -170,7 +192,7 @@
           </p>
         </div>
         <div
-          class="bg-[#351165]/40 p-[24px] flex flex-col space-y-[16px] rounded-[24px] lg:col-span-9 lg:row-span-4 lg:justify-center lg:px-[40px]"
+          class="bg-[#351165]/40 p-[24px] flex flex-col space-y-[16px] rounded-[24px] lg:col-span-9 lg:row-span-4 lg:justify-center lg:px-[40px] shadow-2xl transition-all duration-300 hover:scale-110 cursor-pointer"
         >
           <img class="w-[60px] h-[60px]" src="images/device.png" alt="" />
           <h2 class="text-white text-[22px] font-bold lg:text-[24px]">
@@ -182,7 +204,7 @@
           </p>
         </div>
         <div
-          class="bg-[#351165]/40 p-[24px] flex flex-col space-y-[16px] rounded-[24px] lg:col-span-9 lg:row-span-4 lg:justify-center lg:px-[40px]"
+          class="bg-[#351165]/40 p-[24px] flex flex-col space-y-[16px] rounded-[24px] lg:col-span-9 lg:row-span-4 lg:justify-center lg:px-[40px] shadow-2xl transition-all duration-300 hover:scale-110 cursor-pointer"
         >
           <img class="w-[60px] h-[60px]" src="images/location.png" alt="" />
           <h2 class="text-white text-[22px] font-bold lg:text-[24px]">
@@ -193,7 +215,7 @@
           </p>
         </div>
         <div
-          class="bg-[#351165]/40 p-[24px] flex flex-col space-y-[16px] rounded-[24px] lg:col-span-8 lg:row-span-4 lg:justify-center lg:px-[40px]"
+          class="bg-[#351165]/40 p-[24px] flex flex-col space-y-[16px] rounded-[24px] lg:col-span-8 lg:row-span-4 lg:justify-center lg:px-[40px] shadow-2xl transition-all duration-300 hover:scale-110 cursor-pointer"
         >
           <img class="w-[60px] h-[60px]" src="images/zap-fast.png" alt="" />
           <h2 class="text-white text-[22px] font-bold lg:text-[24px]">
@@ -207,7 +229,7 @@
           </p>
         </div>
         <div
-          class="bg-[#351165]/40 p-[24px] flex flex-col space-y-[16px] rounded-[24px] lg:col-span-4 lg:row-span-4 lg:justify-center lg:px-[40px]"
+          class="bg-[#351165]/40 p-[24px] flex flex-col space-y-[16px] rounded-[24px] lg:col-span-4 lg:row-span-4 lg:justify-center lg:px-[40px] shadow-2xl transition-all duration-300 hover:scale-110 cursor-pointer"
         >
           <img class="w-[60px] h-[60px]" src="images/resource.png" alt="" />
           <h2 class="text-white text-[22px] font-bold">Rich Resources</h2>
@@ -220,14 +242,14 @@
     </div>
     <!-- Featured Episodes -->
     <div class="Featured px-5 py-[40px] lg:p-[120px]">
-      <h2 class="text-white font-bold text-[32px] text-center lg:text-[48px]">
+      <h2 class="text-white font-bold text-[32px] text-center lg:text-[48px] shadow-2xl transition-all duration-300 hover:scale-110 cursor-pointer">
         Featured Episodes
       </h2>
       <div
         class="Featured_card py-[24px] grid grid-cols-1 place-items-center md:grid-cols-2 lg:grid-cols-3 lg:justify-items-center gap-[16px] lg:gap-0"
       >
         <div
-          class="w-[400px] h-[393px] bg-[#250D44] rounded-[15px] lg:w-[380px] lg:h-[440px]"
+          class="w-[400px] h-[393px] bg-[#250D44] rounded-[15px] lg:w-[380px] lg:h-[440px] shadow-2xl transition-all duration-300 hover:scale-110 cursor-pointer"
         >
           <iframe
             class="w-full rounded-[15px] h-[225px] lg:h-[214xpx]"
@@ -247,7 +269,7 @@
             allowfullscreen
           ></iframe>
           <div
-            class="flex flex-col p-4 space-y-[8px] lg:py-[12px] lg:px-[24px]"
+            class="flex flex-col p-4 space-y-[8px] lg:py-[12px] lg:px-[24px] "
           >
             <h2 class="text-white font-bold text-[20px] lg:text-[24px]">
               সূরা আর রহমান | Zain Abu Kautsar
@@ -265,7 +287,7 @@
           </div>
         </div>
         <div
-          class="w-[400px] h-[393px] bg-[#250D44] rounded-[15px] lg:w-[380px] lg:h-[440px]"
+          class="w-[400px] h-[393px] bg-[#250D44] rounded-[15px] lg:w-[380px] lg:h-[440px] shadow-2xl transition-all duration-300 hover:scale-110 cursor-pointer"
         >
           <iframe
             class="w-full rounded-[15px] h-[225px] lg:h-[214xpx]"
@@ -303,7 +325,7 @@
           </div>
         </div>
         <div
-          class="w-[400px] h-[393px] bg-[#250D44] rounded-[15px] lg:w-[380px] lg:h-[440px]"
+          class="w-[400px] h-[393px] bg-[#250D44] rounded-[15px] lg:w-[380px] lg:h-[440px] shadow-2xl transition-all duration-300 hover:scale-110 cursor-pointer"
         >
           <iframe
             class="w-full rounded-[15px] h-[225px] lg:h-[214xpx]"
@@ -323,7 +345,7 @@
             allowfullscreen
           ></iframe>
           <div
-            class="flex flex-col p-4 space-y-[8px] lg:py-[12px] lg:px-[24px]"
+            class="flex flex-col p-4 space-y-[8px] lg:py-[12px] lg:px-[24px] "
           >
             <h2 class="text-white font-bold text-[20px] lg:text-[24px]">
               Surah Al Mulk Recited by Alaa' Yaseer
@@ -343,17 +365,27 @@
       </div>
     </div>
     <!--  -->
-    <section class="px-[20px] flex flex-col space-y-[24px] lg:space-y-[40px] lg:px-[200px] ">
-      <h2 class="text-center text-white font-bold text-[32px] lg:text-[48px] ">
+    <section
+      class="px-[20px] flex flex-col space-y-[24px] lg:space-y-[40px] lg:px-[200px]"
+    >
+      <h2 class="text-center text-white font-bold text-[32px] lg:text-[48px]">
         Meet the Host
       </h2>
-      <div class="bg-[#351165]/40 flex flex-col items-center p-[24px] space-y-[16px] rounded-[24px] lg:flex-row lg:p-[40px] lg:justify-between lg:space-x-[24px]   ">
-        <div class="" >
-          <img class="w-[150px] h-[150px] lg:w-[200px] lg:h-[200px] rounded-full " src="images/host.png" alt="" />
+      <div
+        class="bg-[#351165]/40 flex flex-col items-center p-[24px] space-y-[16px] rounded-[24px] lg:flex-row lg:p-[40px] lg:justify-between lg:space-x-[24px]"
+      >
+        <div class="lg:w-100">
+          <img
+            class="w-[150px] h-[150px] lg:w-[200px] lg:h-[200px] rounded-full shadow-2xl transition-all duration-300 hover:scale-110 cursor-pointer"
+            src="images/host.png"
+            alt=""
+          />
         </div>
-        <div class="flex flex-col items-center space-y-[16px] lg:items-start ">
-          <h2 class="text-white font-bold text-[24px] lg:text-[32px] ">Alex Kumar</h2>
-          <p class=" text-white/60  text-[16px] leading-[24px] leading-[24px]">
+        <div class="flex flex-col items-center space-y-[16px] lg:items-start">
+          <h2 class="text-white font-bold text-[24px] lg:text-[32px]">
+            Alex Kumar
+          </h2>
+          <p class="text-white/60 text-[16px] leading-[24px] leading-[24px]">
             Tech entrepreneur, productivity expert, and lifelong learner. Alex
             has been in the tech industry for over 10 years, working with
             startups and Fortune 500 companies. Through TechWave, Alex shares
@@ -361,21 +393,69 @@
             looking to grow in tech.
           </p>
           <div class="flex space-x-[8px]">
-           <div class="border border-[#533C72] p-[10px] rounded-full flex justify-center items-center">
-             <img src="images/linkedin.png" alt="" />
-           </div>
-            <div class="border border-[#533C72] p-[10px] rounded-full flex justify-center items-center">
+            <div
+              class="border border-[#533C72] p-[10px] rounded-full flex justify-center items-center shadow-2xl transition-all duration-300 hover:scale-125 cursor-pointer "
+            >
+              <img src="images/linkedin.png" alt="" />
+            </div>
+            <div
+              class="border border-[#533C72] p-[10px] rounded-full flex justify-center items-center shadow-2xl transition-all duration-300 hover:scale-125 cursor-pointer"
+            >
               <img src="images/x.png" alt="" />
             </div>
-           <div class="border border-[#533C72] p-[10px] rounded-full flex justify-center items-center">
-             <img src="images/instagram.png" alt="" />
-           </div>
-            <div class="border border-[#533C72] p-[10px] rounded-full flex justify-center items-center">
+            <div
+              class="border border-[#533C72] p-[10px] rounded-full flex justify-center items-center shadow-2xl transition-all duration-300 hover:scale-125 cursor-pointer"
+            >
+              <img src="images/instagram.png" alt="" />
+            </div>
+            <div
+              class="border border-[#533C72] p-[10px] rounded-full flex justify-center items-center shadow-2xl transition-all duration-300 hover:scale-125 cursor-pointer"
+            >
               <img src="images/youtube.png" alt="" />
             </div>
           </div>
         </div>
       </div>
     </section>
+    <footer
+      class="bg-[url('images/footer-bg.png')] bg-cover bg-center bg-no-repeat flex flex-col justify-center items-center py-[40px] space-y-[24px] mt-[40px] lg:space-y-[32px]"
+    >
+      <img
+        class="w-[219px] h-[32px] lg:w-[410px] lg:h-[60px]"
+        src="images/TechWave.png"
+        alt=""
+      />
+      <div
+        class="flex flex-wrap space-x-[16px] space-y-[16px] justify-center items-center w-[90%] lg:w-full lg:space-x-[24px]"
+      >
+        <div class="flex space-x-[8px] items-center shadow-2xl transition-all duration-300 hover:scale-125 cursor-pointer">
+          <img class="w-[24px] h-[24px]" src="images/spotify.png" alt="" />
+          <h2 class="text-white/60 text-[16px] font-medium">Spotify</h2>
+        </div>
+        <div class="flex space-x-[8px] items-center shadow-2xl transition-all duration-300 hover:scale-125 cursor-pointer">
+          <img
+            class="w-[24px] h-[24px]"
+            src="images/apple-podcast.png"
+            alt=""
+          />
+          <h2 class="text-white/60 text-[16px] font-medium">Apple Podcasts</h2>
+        </div>
+        <div class="flex space-x-[8px] items-center shadow-2xl transition-all duration-300 hover:scale-125 cursor-pointer">
+          <img
+            class="w-[24px] h-[24px]"
+            src="images/youtube-podcast.png"
+            alt=""
+          />
+          <h2 class="text-white/60 text-[16px] font-medium">YouTube</h2>
+        </div>
+        <div class="flex space-x-[8px] items-center shadow-2xl transition-all duration-300 hover:scale-125 cursor-pointer ">
+          <img class="w-[24px] h-[24px]" src="images/twitter.png" alt="" />
+          <h2 class="text-white/60 text-[16px] font-medium ">Twitter</h2>
+        </div>
+      </div>
+      <p class="text-white/60 text-center">
+        © 2026 TechWave Podcast. All rights reserved.
+      </p>
+    </footer>
   </body>
 </html>
